@@ -3,7 +3,6 @@ FROM python:3.8-alpine
 # Add project source
 WORKDIR /musicbot
 COPY . ./
-COPY ./config config_sample
 
 # Install build dependencies
 RUN apk update && apk add --no-cache --virtual .build-deps \
